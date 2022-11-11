@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+/* 
+#2F465F
+#0D1E54
+#C3CBD9 
+
+https://dribbble.com/shots/14099663-Palma-Aquarium
+http://mundoaquario.com.br/GuiaIniciante/CalculadoraVolume
+https://www.youtube.com/watch?v=t5zFfDdvApE
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family:'Montserrat', sans-serif;  
+}
+
+/* HOME */
+
+#home{
+    height: 100vh;
+}
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+    
+#barraTopo {
+    display: flex;
+    font-weight: 900;
+    width:100%;
+    text-align:center;
+    position: fixed;
+}
+
+.numberinfo{
+    display: flex;
+    width: 30%;
+    height: 10vh;
+    align-items: center;
+    justify-content: left;
+    color: white ;
+    margin-left: 40px;
+}
+
+.numberinfo p{
+    margin-left: 10px;
+}
+
+.barraLogo {
+    font-weight: 900;
+    color: white ;
+    text-shadow: -5px -2px 5px rgba(0, 29, 135, 0.993);
+    text-transform: lowercase;
+    width: 40%;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 10vh;
+}
+
+
+.barraLogo p{
+    margin-left: 20px;
+    
+}
+
+.barraMenu {
+    display: flex;
+    width: 30%;
+    height: 10vh;
+    align-items: center;
+    justify-content: right;
+    margin-right: 40px;
+}
+.barraMenu p{
+    margin-right: 20px;
+}
+.button{
+    display: flex;
+    width: 30%;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    color: white ;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: width .5s;    
+}
+
+
+.button.expand {
+    width: 30%;   
+}
+
+
+.fa-bars.expand:before{
+    content: '\f00d';
+}
+
+ul {
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+    width: 10%;
+    height: 365px;
+    padding: 1px 1px;
+    top: 65px;
+    margin-right: 20px;  
+}
+
+ul li {
+    line-height: 35px;
+    padding: 7px 1px;
+    border-bottom: 1px solid rgb(74, 73, 73);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+ul li:hover:first-child{
+    border-radius: 5px 5px 0 0;
+}
+
+ul li:last-child{
+    border-bottom: none;
+}
+
+ul li:hover:last-child{
+    border-radius: 0 0 5px 5px;
+} 
+
+ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    color: #ffffff;
+   
+}
+
+ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #C3CBD9;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out ;
+}
+ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+#conteudoCentro{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    text-shadow: -3px -3px 5px rgba(2, 61, 128, 0.875);
+   
+}
+
+.titulo{
+    width: 100%;
+    display: flex;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 55px;
+    margin-top: 20%;
+    margin-left: 7%; 
+    text-align: right;   
+}
+
+#texto2{
+    width: 100%;
+    color: #ffffff ;
+    text-shadow: -5px -4px 5px rgba(0, 29, 135, 0.993);
+    text-align: center;
+}
+
+#texto3{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 110px;
+}
+
+#texto3 p{
+    margin-left: 10px;
+}
+
+#texto4{
+    color: #ffffff ;
+    text-shadow: -5px -4px 5px rgba(0, 29, 135, 0.993);
+    width: 100%;
+    text-align: center;
+    margin-left: 120px;
+}
+
+/* SOBRE NÓS */
+
+#intro{
+    background-color: #192856;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#bolhas-container{
+    width: 50%;
+    margin-left: 150px;
+    
+}
+
+.bolhas{
+    margin: -100px;
+}
+
+#peixes-bolhas1{
+    border-radius: 70%;
+    width: 330px;
+    height: 330px;
+    margin-left: 35px;
+    border: thin solid rgb(91, 90, 136);
+    padding: 6px;
+    box-shadow: -3px -2px  #8ab4fd2d;
+}
+
+#peixes-bolhas2{
+    border-radius: 70%;
+    width: 200px;
+    height: 200px;
+    margin-left: 310px;
+    border: thin solid rgb(91, 90, 136);
+    padding: 6px;
+    box-shadow: 3px -2px  #8ab4fd2d;
+}
+
+#peixes-bolhas3{
+    border-radius: 70%;
+    width: 250px;
+    height: 250px;
+    margin-left: 90px;
+    border: thin solid rgb(91, 90, 136);
+    padding: 6px;
+    box-shadow: -3px 2px  #8ab4fd2d;
+}
+
+#informacoes{
+    width: 80%;
+    height: auto;
+    margin-right: 100px;
+    
+}
+
+#titulo-info{
+    font-size: 30px;
+    color: #e2e6ee;
+    padding: 10px;
+    font-weight: 700;
+    text-shadow: -3px -3px 5px rgba(2, 61, 128, 0.875);
+}
+
+.textos-info{
+    font-size: 17px;
+    color: #e2e6ee;
+    text-align: justify;
+    padding: 10px;
+}
+
+/* PEIXES */
+
+#peixes{
+    background-color: #192856;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+#peixes img {
+    height: 300px;
+    width: 250px;
+    border-radius: 3px;
+}
+
+.peixes-cards{
+    height: 300px;
+    margin: 15px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.info{
+    height: 100px;
+    font-size: 10px;
+    width: 250px;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+}
