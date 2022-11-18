@@ -191,18 +191,21 @@
             <div class="container-calc">
                 <h2>Insira os dados do seu aquário<br>para calcular</h2>
                 <div class="inputBox">
-                    <input id="compr" type="text" required="required">
+                    <input id="compr" type="text" required="required" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" onkeypress="return event.charCode >= 48" min="1">
                     <span>Comprimento</span>
                 </div>
                 <div class="inputBox">
-                    <input id="largura" type="text" required="required">
+                    <input id="largura" type="text" required="required" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" onkeypress="return event.charCode >= 48" min="1">
                     <span>Largura</span>
                 </div>
                 <div class="inputBox">
-                    <input id="altura" type="text" required="required">
+                    <input id="altura" type="text" required="required" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" onkeypress="return event.charCode >= 48" min="1">
                     <span>Altura</span>
                 </div>
-                <button class="botao-calc" type="button" onclick="calcular()">Calcular</button>
+                <a id="botao-calc" href="#calculadora" onclick="calcular()">
+                    <span>calcular</span>
+                    <div class="wave"></div>
+                </a>
                 <div id="resultados">
                     <i class="fa-solid fa-glass-water-droplet"></i><p id="resultado-litr"></i></p>
                     <i class="fa-solid fa-temperature-arrow-up"></i><p id="resultado-aquece"></i></p>
