@@ -340,6 +340,7 @@ ul li a:hover::after{
 .container{
     padding: 30px 0;
     margin-top: 10px;
+   
 }
 
 .card{
@@ -347,15 +348,17 @@ ul li a:hover::after{
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
     position: relative;
-}
+} 
 
 .swiper {
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 10px;
 }
 
 .swiper-pagination-bullet{
-    background-color: white;
+    padding: 2px;
+    background-color: #ffffff8c;
 }
 .intro {
     height: 70px;
@@ -537,10 +540,10 @@ ul li a:hover::after{
 #botao-calc{
     display: block;
     position: relative;
-    padding: 10px 30px;
+    padding: 12px 30px;
     font-size: 15px;
     text-transform: uppercase;
-    border: 2px solid #00aeff;
+    border: 1px solid #00aeff;
     color: #00aeff;
     text-decoration: none;
     overflow: hidden;
