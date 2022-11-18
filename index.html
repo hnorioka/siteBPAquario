@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Planet</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script src="https://kit.fontawesome.com/b55aea0ef5.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <link rel="icon" href="imagens/peixe-icon.png">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
 <body>
     <section id="home">
         <video autoplay muted loop plays-inline>
@@ -16,7 +17,7 @@
         </video>
         <div id="barraTopo">
             <div class="numberinfo">
-                <i class="fa-solid fa-phone"></i><p>+55 85 9881368337</p>
+                <i class="fa-solid fa-phone"></i><p>+55 85 9123456789</p>
             </div>
             <div class="barraLogo">
                 <i class="fa-solid fa-fish-fins"></i><p>Blue Planet</p>
@@ -27,7 +28,7 @@
                 </div>
                 <ul>
                     <li><a href="#home">home</a></li>
-                    <li><a href="#intro">sobre nós</a></li>
+                    <li><a href="#intro">sobre</a></li>
                     <li><a href="#peixes">peixes</a></li>
                     <li><a href="#calculadora">calculadora</a></li>    
                 </ul>
@@ -45,6 +46,7 @@
             </div>   
         </div>
     </section>
+
     <section id="intro"> 
         <div id="bolhas-container">
             <div class="bolhas"><img id="peixes-bolhas1" src="imagens/peixe-bolhas1c.jpeg" alt=""></div>
@@ -52,52 +54,166 @@
             <div class="bolhas"><img id="peixes-bolhas3" src="imagens/peixe-bolhas3.jpg" alt=""></div>
         </div>
         <div id="informacoes">
-        <span>
-            <p id="titulo-info"> Criação de peixes</p><br>
+        <span> 
+            <p id="titulo-info"><i class="fa-solid fa-water"></i> Criação de peixes</p><br>
             <p class="textos-info"> Os aquários são lindos e sempre muito bem-vindos como peça de decoração. Porém, não podemos esquecer que este complexo ambiente é o lar de delicados pets. O de água doce pode ser de qualquer tamanho e pode-se utilizar água da torneira, mas sua troca deve ser parcial. O custo é baixo e um bom manejo é necessário, pois os peixes alcalinizam a água. O de água salgada deve ser espaçoso, mas não são tão fáceis como os de água doce: precisam de cuidado redobrado.</p>
             <p class="textos-info">Os peixes precisam de condições específicas para uma boa qualidade de vida. Portanto, antes de montar seu aquário, considere alguns pontos:</p>
             <p class="textos-info"><i class="fa-solid fa-arrow-right"></i> Tamanho do recipiente <br> <i class="fa-solid fa-arrow-right"></i> Local certo para o aquário <br> <i class="fa-solid fa-arrow-right"></i> Filtragem <br> <i class="fa-solid fa-arrow-right"></i> Temperatura e pH</p>
-            <p class="textos-info" >Agora que você já sabe como cuidar de aquário, é hora de conhecer alguns peixes de fácil trato que se dão muito bem com aquaristas iniciantes!</p>
+            <p class="textos-info">No nosso site oferecemos uma calculadora que a partir da altura, largura e comprimento do aquário desejado fornece os valores para o aquecedor, para a bomba e a quatidade de litros que seu aquário precisa.</p>
         </span>
         </div>
     </section>
-    <section  id="peixes"> 
-            <div class="peixes-cards">
-                <img src="imagens/peixe-domino.jpg" alt="">
-                <div class="info">
-                    <h1>Peixe</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit, expedita voluptas cumque minus quis exercitationem aperiam ipsum ratione deleniti atque soluta dignissimos in iusto quidem optio beatae consequatur aliquam!</p>
+    
+    <section id="peixes" class="peixes">
+        <div id="intro-peixes">
+            <p>Agora que você já sabe como cuidar de aquário, é hora de conhecer alguns peixes de fácil trato que se dão muito bem com aquaristas iniciantes!</p>    
+        </div>
+        <p id="aviso">Passe o mouse nas imagens</p>
+        <div class="container swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <img src="imagens/peixe-platy.jpg" alt="">
+                        <div class="intro">
+                            <h1>Platy</h1>
+                            <p>Um peixe colorido, ativo e nem um pouco tímido, o platy é a escolha para você. É uma espécie muito resistente e interessante de assistir, se tornando uma ótima opção para iniciantes, que desejam popular seus aquários com peixes que chamam a atenção, sem necessitar muita manutenção.<br> 
+                                <br><i class="fa-solid fa-droplet"></i>Tipo de água: Água doce 
+                                <br><i class="fa-solid fa-temperature-high"></i>Temperatura adequada: 18°C – 28°C
+                                <br><i class="fa-sharp fa-solid fa-face-smile"></i>Temperamento: Pacífico
+                                <br><i class="fa-solid fa-fish"></i>Tamanho: 6 cm
+                                <br><i class="fa-solid fa-heart-pulse"></i>Expectativa de vida: 3 a 5 anos
+                                <br><i class="fa-solid fa-drumstick-bite"></i>Alimentação: Onívoro</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="imagens/peixe-betta.jpg" alt="">
+                        <div class="intro">
+                            <h1>Betta</h1>
+                            
+                            <p>O belo peixe betta é um espetáculo de se observar graças as suas cores vividas e brilhantes, além de suas maravilhosas e fluidas nadadeiras. Esta espécie de peixe é bastante popular e possui muita personalidade, tudo em um pequeno pacote. <br> 
+                                <br><i class="fa-solid fa-droplet"></i>Tipo de água: Água doce 
+                                <br><i class="fa-solid fa-temperature-high"></i>Temperatura adequada: 22°C – 30°C 
+                                <br><i class="fa-sharp fa-solid fa-face-smile"></i>Temperamento: Territorialista 
+                                <br><i class="fa-solid fa-fish"></i>Tamanho: 8 cm
+                                <br><i class="fa-solid fa-heart-pulse"></i>Expectativa de vida: 3 anos 
+                                <br><i class="fa-solid fa-drumstick-bite"></i>Alimentação: Carnívoro (rações)</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="imagens/peixe-acara.jpg" alt="">
+                        <div class="intro">
+                            <h1>Acará Bandeira</h1>
+                            <p>É uma das espécies mais populares do aquarismo, sendo muito comum o encontrar em aquários de iniciantes. Quando criado nas condições ideais, é um peixe muito bonito, resistente, que vive bastante e se reproduz com muita facilidade. <br> 
+                                <br><i class="fa-solid fa-droplet"></i>Tipo de água: Água doce 
+                                <br><i class="fa-solid fa-temperature-high"></i>Temperatura adequada: 24°C – 30°C 
+                                <br><i class="fa-sharp fa-solid fa-face-smile"></i>Temperamento: Majoritariamente pacífico
+                                <br><i class="fa-solid fa-fish"></i>Tamanho: até 15 cm
+                                <br><i class="fa-solid fa-heart-pulse"></i>Expectativa de vida: Até 10 anos 
+                                <br><i class="fa-solid fa-drumstick-bite"></i>Alimentação: Onívoro</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="imagens/peixe-patela.jpg" alt="">
+                        <div class="intro">
+                            <h1>Cirurgião Patela</h1>
+                            <p>O Cirurgião Patela ou Blue Tang, é a famosa Dory, e no mundo dos aquários, já era muito querido antes dos filmes. Além de bonito, é um peixe muito resistente, porém ele cresce muito. Muito mesmo. Então não deve ser mantido em aquários pequenos. <br> 
+                                <br><i class="fa-solid fa-droplet"></i>Tipo de água: Água salgada 
+                                <br><i class="fa-solid fa-temperature-high"></i>Temperatura adequada: 25°C – 31°C 
+                                <br><i class="fa-sharp fa-solid fa-face-smile"></i>Temperamento: Pacífico
+                                <br><i class="fa-solid fa-fish"></i>Tamanho: até 31 cm
+                                <br><i class="fa-solid fa-heart-pulse"></i>Expectativa de vida: de 8 a 10 anos 
+                                <br><i class="fa-solid fa-drumstick-bite"></i>Alimentação: Onívoro</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="imagens/peixe-palhaco1.jpg" alt="">
+                        <div class="intro">
+                            <h1>Palhaço</h1>
+                            <p>O peixe de água salgada mais famoso do mundo, sendo muito amado devido a suas cores, comportamento pacífico com outras espécies e também devido a sua relação de simbiose com as anêmonas. É um peixe resistente e com preço mais accessível que a maioria dos peixes de água salgada. <br> 
+                                <br><i class="fa-solid fa-droplet"></i>Tipo de água: Água salgada 
+                                <br><i class="fa-solid fa-temperature-high"></i>Temperatura adequada: 25°C – 31°C 
+                                <br><i class="fa-sharp fa-solid fa-face-smile"></i>Temperamento: Pacífico
+                                <br><i class="fa-solid fa-fish"></i>Tamanho: até 31 cm
+                                <br><i class="fa-solid fa-heart-pulse"></i>Expectativa de vida: de 8 a 10 anos 
+                                <br><i class="fa-solid fa-drumstick-bite"></i>Alimentação: Onívoro</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="imagens/peixe-yellow1.jpg" alt="">
+                        <div class="intro">
+                            <h1>Yellow Tang</h1>
+                            <p>É um peixe muito comum de ser encontrado nos aquários marinhos. Chama muita atenção, principalmente devido a sua cor amarela muito intensa. Conhecido por comer algas, podendo ajudar no controle das mesmas nos aquários marinhos, por isso, necessita um aquário de tamanho adequado para seu desenvolvimento saudável. <br> 
+                                <br><i class="fa-solid fa-droplet"></i>Tipo de água: Água salgada 
+                                <br><i class="fa-solid fa-temperature-high"></i>Temperatura adequada: 24°C – 28°C
+                                <br><i class="fa-sharp fa-solid fa-face-smile"></i>Temperamento: Semi-agressivo
+                                <br><i class="fa-solid fa-fish"></i>Tamanho: até 20 cm
+                                <br><i class="fa-solid fa-heart-pulse"></i>Expectativa de vida: de 10 e 30 anos
+                                <br><i class="fa-solid fa-drumstick-bite"></i>Alimentação: Herbívoro</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="imagens/peixe-borboleta1.jpg" alt="">
+                        <div class="intro">
+                            <h1>Borboleta Listrado</h1>
+                            <p> É um peixe muito bonito e atraente aos olhos daqueles que procuram exemplares únicos para o aquário. Embora seja um peixe muito popular entre os aquaristas, este incrível morador das profundezas é bastante raro e cobra um preço alto por isso.<br> 
+                                <br><i class="fa-solid fa-droplet"></i>Tipo de água: Água salgada 
+                                <br><i class="fa-solid fa-temperature-high"></i>Temperatura adequada: 24°C – 28°C
+                                <br><i class="fa-sharp fa-solid fa-face-smile"></i>Temperamento: Pacífico
+                                <br><i class="fa-solid fa-fish"></i>Tamanho: até 14 cm
+                                <br><i class="fa-solid fa-heart-pulse"></i>Expectativa de vida: de 5 a 7 anos
+                                <br><i class="fa-solid fa-drumstick-bite"></i>Alimentação: Onívoro</p>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <img src="imagens/peixe-dourado.jpg" alt="">
+                        <div class="intro">
+                            <h1>Kinguio</h1>
+                            <p>Eles são animais muito tolerantes aos erros cometidos por iniciantes, e podem aceitar níveis moderados de amônia, nitrito e nitrato sem maiores problemas. No entanto, os kinguios são considerados animais bem sujões e, por isso, o aquarista precisa ficar atento a filtragem e limpeza do aquário.<br> 
+                                <br><i class="fa-solid fa-droplet"></i>Tipo de água: Água doce 
+                                <br><i class="fa-solid fa-temperature-high"></i>Temperatura adequada: 10°C – 21°C
+                                <br><i class="fa-sharp fa-solid fa-face-smile"></i>Temperamento: Pacífico
+                                <br><i class="fa-solid fa-fish"></i>Tamanho: até 25 cm
+                                <br><i class="fa-solid fa-heart-pulse"></i>Expectativa de vida: de 10 e 25 anos
+                                <br><i class="fa-solid fa-drumstick-bite"></i>Alimentação: Onívoro</p>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="swiper-button-next botaodireita"></div>
+            <div class="swiper-button-prev botaoesquerda"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+        
+    <section id="calculadora" class="calculadora">
+        </div>
+            <div class="container-calc">
+                <h2>Insira os dados do seu aquário<br>para calcular</h2>
+                <div class="inputBox">
+                    <input id="compr" type="text" required="required">
+                    <span>Comprimento</span>
+                </div>
+                <div class="inputBox">
+                    <input id="largura" type="text" required="required">
+                    <span>Largura</span>
+                </div>
+                <div class="inputBox">
+                    <input id="altura" type="text" required="required">
+                    <span>Altura</span>
+                </div>
+                <button class="botao-calc" type="button" onclick="calcular()">Calcular</button>
+                <div id="resultados">
+                    <i class="fa-solid fa-glass-water-droplet"></i><p id="resultado-litr"></i></p>
+                    <i class="fa-solid fa-temperature-arrow-up"></i><p id="resultado-aquece"></i></p>
+                    <i class="fa-solid fa-bolt"></i><p id="resultado-bomba"></i></p>
                 </div>
             </div>
-            <div class="peixes-cards">
-                <img src="imagens/peixe-dory.jpg" alt="">
-                <div class="info">
-                    <h1>Peixe</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit, expedita voluptas cumque minus quis exercitationem aperiam ipsum ratione deleniti atque soluta dignissimos in iusto quidem optio beatae consequatur aliquam!</p>
-                </div>
-            </div>
-            <div class="peixes-cards">
-                <img src="imagens/peixe-dourado.jpg" alt="">
-                <div class="info">
-                    <h1>Peixe</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit, expedita voluptas cumque minus quis exercitationem aperiam ipsum ratione deleniti atque soluta dignissimos in iusto quidem optio beatae consequatur aliquam!</p>
-                </div>
-            </div>
-            <div class="peixes-cards">
-                <img src="imagens/peixe-palhaco.jpg" alt="">
-                <div class="info">
-                    <h1>Peixe</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit, expedita voluptas cumque minus quis exercitationem aperiam ipsum ratione deleniti atque soluta dignissimos in iusto quidem optio beatae consequatur aliquam!</p>
-                </div>
-            </div>
-            <div class="peixes-cards">
-                <img src="imagens/peixe-platy.jpg" alt="">      
-                <div class="info">
-                    <h1>Peixe</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet impedit, expedita voluptas cumque minus quis exercitationem aperiam ipsum ratione deleniti atque soluta dignissimos in iusto quidem optio beatae consequatur aliquam!</p>
-                </div>
-            </div>
+            <div id="fundo-calc">
+                <img src="imagens/fundo-calc1.jpg" alt="">
+            </div> 
     </section>
 </body>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/index.js"></script>
 </html>
